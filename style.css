@@ -38,6 +38,15 @@ section h2 { font-size: 26px; margin: 0 0 16px; }
 .product h3 { font-size: 24px; margin: 0 0 10px; }
 .product ul { margin: 14px 0 0; padding-left: 20px; color: var(--muted); }
 .product li { margin: 4px 0; }
+h2.sub { font-size: 22px; margin: 32px 0 14px; }
+.steps { counter-reset: step; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+.steps li { counter-increment: step; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; color: var(--muted); font-size: 16px; }
+.steps li::before { content: counter(step); display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; margin-right: 8px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 14px; }
+.steps b { color: var(--text); }
+.timeline { list-style: none; margin: 18px 0 0; padding: 0; border-left: 2px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 12px 18px; color: var(--muted); }
+.timeline li::before { content: ""; position: absolute; left: -6px; top: 9px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.timeline span { display: inline-block; min-width: 130px; font-weight: 600; color: var(--text); }
 .contact { font-size: 18px; }
 footer.site { border-top: 1px solid var(--line); margin-top: 40px; padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
 footer.site .wrap { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
