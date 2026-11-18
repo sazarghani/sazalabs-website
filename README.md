@@ -10,6 +10,8 @@ from the root of the `main` branch.
 |---|---|---|---|
 | `/` | `index.html` | English | Company, IntelliBrief, services, about, contact |
 | `/de/` | `de/index.html` | German | The same content in German |
+| `/intellibrief/` | `intellibrief/index.html` | English | IntelliBrief product page: features with screenshots, principles, article series, beta links |
+| `/de/intellibrief/` | `de/intellibrief/index.html` | German | The same product page in German |
 | `/impressum.html` | `impressum.html` | German | Legal notice (§ 5 DDG) |
 | `/datenschutz.html` | `datenschutz.html` | German, English summary | Privacy policy of the website |
 
@@ -19,7 +21,9 @@ custom domain for GitHub Pages) and `.nojekyll` (serve the files as they
 are, without Jekyll processing).
 
 The English and German home pages carry the same content. When one
-changes, change the other in the same commit.
+changes, change the other in the same commit. The same applies to the two
+IntelliBrief pages. Their screenshots live in `intellibrief/img/` (JPEG, at
+most 1600 px wide) and are shared by both languages.
 
 ## Hosting and DNS
 

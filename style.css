@@ -59,3 +59,58 @@ footer.site a { color: var(--muted); }
   header.site .wrap { flex-direction: column; align-items: flex-start; gap: 8px; }
   .hero { padding: 44px 0 28px; }
 }
+
+/* IntelliBrief product page */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px; font-weight: 600; font-size: 16px; text-decoration: none; border: 1px solid var(--accent); }
+.btn.primary { background: var(--accent); color: var(--panel); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.secondary { color: var(--accent); background: var(--panel); }
+.btn.secondary:hover { background: var(--accent-soft); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.eyebrow { display: inline-block; background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+.pg-hero { padding: 64px 0 28px; text-align: center; }
+.pg-hero h1 { font-size: clamp(38px, 6vw, 60px); line-height: 1.05; margin: 0 0 16px; letter-spacing: -0.02em; }
+.pg-hero .lede { font-size: clamp(18px, 2.4vw, 22px); color: var(--muted); max-width: 720px; margin: 0 auto; }
+.pg-hero .actions { justify-content: center; }
+.pg-hero .note { font-size: 14px; color: var(--muted); margin-top: 14px; }
+.shot { margin: 0; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 18px 40px -18px rgba(16, 24, 40, 0.35); }
+.shot figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; text-align: center; }
+.hero-shot { margin: 40px auto 0; max-width: 980px; }
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 8px; }
+.pillar { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; border-top: 3px solid var(--accent); }
+.pillar h3 { margin: 0 0 6px; font-size: 19px; }
+.pillar p { margin: 0; color: var(--muted); font-size: 16px; }
+.intro { font-size: 19px; color: var(--muted); max-width: 760px; }
+.feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 44px; align-items: center; padding: 44px 0; border-top: 1px solid var(--line); }
+.feature.flip > .text { order: 2; }
+.feature .text h2 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; }
+.feature .text p { color: var(--muted); margin: 0 0 12px; }
+.feature .text ul { color: var(--muted); padding-left: 20px; margin: 0; }
+.feature .text li { margin: 4px 0; }
+.feature .kicker { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--highlight); margin-bottom: 8px; }
+.shot.portrait { max-width: 340px; margin: 0 auto; }
+.pair { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.series { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.series li { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; color: var(--muted); font-size: 15px; }
+.series li b { display: block; color: var(--text); font-size: 16px; margin-bottom: 4px; }
+.series li .n { color: var(--accent); font-weight: 700; margin-right: 6px; }
+.series li a { font-weight: 600; text-decoration: none; }
+.series li .soon { font-size: 13px; }
+.cta { background: linear-gradient(135deg, var(--accent-soft), var(--panel)); border: 1px solid var(--line); border-radius: 20px; padding: 40px 32px; text-align: center; }
+.cta h2 { font-size: 30px; margin: 0 0 10px; }
+.cta p { color: var(--muted); max-width: 640px; margin: 0 auto; }
+.cta .actions { justify-content: center; }
+.product .actions { margin-top: 20px; }
+@media (max-width: 780px) {
+  .feature { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+  .feature.flip > .text { order: 0; }
+  .pair { grid-template-columns: 1fr; }
+  .pg-hero { padding-top: 40px; }
+  .cta { padding: 30px 20px; }
+}
+.pg-hero, .intro, .pillar, .feature, .series, .cta, .cards.four { hyphens: manual; }
+.cards.four { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.series { grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); }
+.shot.wide { padding: 0 0 44px; }
+@media (max-width: 480px) { .series { grid-template-columns: 1fr; } }
